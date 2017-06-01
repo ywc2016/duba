@@ -1,7 +1,5 @@
 package main;
 
-import job.BeanLoader;
-
 /**
  * Created by yuwc on 2017/6/1.
  */
