@@ -17,8 +17,12 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="a.xml" value="916f22cb-13d2-4b1e-9ea0-84d9ce67c20c" />
+          <unit-entry name="hibernate.cfg.xml" value="916f22cb-13d2-4b1e-9ea0-84d9ce67c20c" />
+        </datasource-map>
         <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -40,7 +44,9 @@
     <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release1" level="project" />
     <orderEntry type="library" name="org.thymeleaf:thymeleaf-spring3:Release1" level="project" />
     <orderEntry type="library" name="Spring-4.3.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:3.8.2" level="project" />
+    <orderEntry type="library" name="Hibernate 5.2.9-5.2.9" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.quartz-scheduler:quartz:1.8.5" level="project" />
@@ -58,6 +64,5 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Hibernate 5.2.9-5.2.9" level="project" />
   </component>
 </module>
