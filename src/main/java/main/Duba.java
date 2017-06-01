@@ -12,13 +12,13 @@ import po.Link;
 
 public class Duba {
 
-    private String newest = "http://news.main.com/json2/xianguo_96439_1.txt";
-    private String tech = "http://news.main.com/json2/xianguo_18754_1.txt";
-    private String international = "http://news.main.com/json2/xianguo_18754_1.txt";
-    private String entertainment = "http://news.main.com/json2/xianguo_1_1.txt";
-    private String military = "http://news.main.com/json2/xianguo_1546_1.txt";
-    private String finance = "http://news.main.com/json2/xianguo_7_1.txt";
-    private String sport = "http://news.main.com/json2/xianguo_186_1.txt";
+    private String newest = "http://news.duba.com/json2/xianguo_96439_1.txt";
+    private String tech = "http://news.duba.com/json2/xianguo_18754_1.txt";
+    private String international = "http://news.duba.com/json2/xianguo_18754_1.txt";
+    private String entertainment = "http://news.duba.com/json2/xianguo_1_1.txt";
+    private String military = "http://news.duba.com/json2/xianguo_1546_1.txt";
+    private String finance = "http://news.duba.com/json2/xianguo_7_1.txt";
+    private String sport = "http://news.duba.com/json2/xianguo_186_1.txt";
 
     public String getNewest() {
         return newest;
