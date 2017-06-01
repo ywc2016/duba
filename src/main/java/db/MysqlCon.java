@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public enum MysqlCon {
     ;
     private static Connection conn;
-    private static String dbName = "duba";
+    private static String dbName = "main";
     private static String userName = "root";
     private static String password = "root";
 

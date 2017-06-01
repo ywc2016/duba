@@ -1,8 +1,6 @@
 package job;
 
-import duba.Duba;
-import org.quartz.Job;
-import org.quartz.JobExecutionContext;
+import main.Duba;
 import org.quartz.JobExecutionException;
 
 /**
