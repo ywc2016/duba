@@ -7,6 +7,7 @@ public class Link {
 
     private long id;
     private String url;
+    private String title;
 
     public long getId() {
         return id;
@@ -24,4 +25,11 @@ public class Link {
         this.url = url;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

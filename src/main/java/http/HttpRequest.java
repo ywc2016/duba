@@ -35,16 +35,19 @@ public class HttpRequest {
             // 获取所有响应头字段
             Map<String, List<String>> map = connection.getHeaderFields();
             // 遍历所有的响应头字段
-            for (String key : map.keySet()) {
+//            for (String key : map.keySet()) {
 //                System.out.println(key + "--->" + map.get(key));
-            }
+//            }
             // 定义 BufferedReader输入流来读取URL的响应
-            in = new BufferedReader(new InputStreamReader(
-                    connection.getInputStream()));
-            String line;
-            while ((line = in.readLine()) != null) {
-                result += line;
+            if (connection.getInputStream() != null) {
+                in = new BufferedReader(new InputStreamReader(
+                        connection.getInputStream()));
+                String line;
+                while ((line = in.readLine()) != null) {
+                    result += line;
+                }
             }
+
         } catch (Exception e) {
             System.out.println("发送GET请求出现异常！" + e);
 //            e.printStackTrace();
@@ -99,8 +102,8 @@ public class HttpRequest {
                 result += line;
             }
         } catch (Exception e) {
-            System.out.println("发送 POST 请求出现异常！" + e);
-            e.printStackTrace();
+//            System.out.println("发送 POST 请求出现异常！" + e);
+//            e.printStackTrace();
         }
         //使用finally块来关闭输出流、输入流
         finally {

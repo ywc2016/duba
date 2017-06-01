@@ -16,10 +16,10 @@ public class LinkDao {
     public int add(Link link) {
         PreparedStatement ps = null;
         try {
-            String sql = "INSERT INTO " + table + " (url) VALUES (?);";
+            String sql = "INSERT INTO " + table + " (url,title) VALUES (?,?);";
             ps = MysqlCon.getConn().prepareStatement(sql);
             ps.setString(1, link.getUrl());
-
+            ps.setString(2, link.getTitle());
             return ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

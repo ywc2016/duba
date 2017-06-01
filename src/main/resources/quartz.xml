@@ -5,6 +5,7 @@
 
 
     <!-- 方式二：使用MethodInvokingJobDetailFactoryBean，任务类可以不实现Job接口，通过targetMethod指定调用方法-->
+
     <!-- 定义目标bean和bean中的方法 -->
     <bean id="DubaJob" class="job.DubaJob"/>
 
@@ -20,7 +21,7 @@
     <!-- ======================== 调度触发器 ======================== -->
     <bean id="CronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail" ref="DubaJobDetail"></property>
-        <property name="cronExpression" value="0 0/1 * * * ?"></property>
+        <property name="cronExpression" value="0 0/30 * * * ?"></property>
     </bean>
 
     <!-- ======================== 调度工厂 ======================== -->
